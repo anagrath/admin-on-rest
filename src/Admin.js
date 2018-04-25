@@ -4,7 +4,7 @@ import { createStore, compose, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import createHistory from 'history/createHashHistory';
 import { ConnectedRouter, routerMiddleware } from 'react-router-redux';
-import createSagaMiddleware from 'redux-saga';
+import {createSagaMiddleware} from 'redux-saga';
 import { all, fork } from 'redux-saga/effects';
 import withContext from 'recompose/withContext';
 import { Route, Switch } from 'react-router-dom';
